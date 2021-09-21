@@ -1,5 +1,6 @@
 // NPM packages
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 
 // Project files
 import Navigation from "./components/Navigation";
@@ -11,14 +12,16 @@ import "./styles/style.scss";
 export default function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navigation />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/overview" exact component={Overview} />
-          <Route path="/parcel/:id" exact component={Detail} />
-        </Switch>
-      </BrowserRouter>
+      <RecoilRoot>
+        <BrowserRouter>
+          <Navigation />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/overview" exact component={Overview} />
+            <Route path="/parcel/:id" exact component={Detail} />
+          </Switch>
+        </BrowserRouter>
+      </RecoilRoot>
     </div>
   );
 }

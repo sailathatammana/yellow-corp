@@ -1,12 +1,15 @@
 nav {
+  box-sizing: border-box;
+  height: 60px;
+  padding: $space-small;
   background-color: $color-yellow;
-  padding: $space-medium;
+  text-align: center;
 }
 
 .logo {
   max-width: 200px;
   height: auto;
-  margin: $space-big auto;
+  margin: 0 auto;
   @media (min-width: $media-tablet) {
     max-width: 250px;
   }
