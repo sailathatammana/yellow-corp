@@ -1,21 +1,43 @@
-.OrderConcise .StatusIcon {
-  font-size: $font-size-big;
-  color: $color-brown;
-}
-
-.sender {
-  font-size: $font-size-medium;
-  font-weight: 700;
-}
-
-.status {
-  font-size: $font-size-small;
-}
-.OrderConcise {
+.ParcelOverview {
+  .StatusIcon {
+    font-size: $font-size-big;
+    color: $color-brown;
+    padding: $space-x-small;
+  }
+  .status {
+    margin-top: $space-small;
+    font-size: $font-size-medium;
+  }
   display: grid;
   grid-template-columns: $space-x-big 1fr;
   column-gap: $space-big;
   justify-items: start;
   align-items: center;
+  margin-bottom: $space-medium;
+  text-decoration: none;
+}
+
+.ParcelOverview:hover {
+  background-color: $color-white;
+  padding-left: $space-small;
+}
+
+.sender {
+  font-size: $font-size-medium;
+  font-weight: 700;
+  margin-top: $space-medium;
+  margin-bottom: 0px;
+  color: $color-black;
+}
+
+.eta {
+  margin-top: $space-small;
+  color: $color-brown;
+  margin-bottom: 0px;
+}
+
+.location {
+  margin-top: $space-small;
+  color: $color-brown;
   margin-bottom: $space-medium;
 }

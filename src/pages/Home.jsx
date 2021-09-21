@@ -13,7 +13,10 @@ export default function Home() {
       />
       <h1>Track your parcels with ease</h1>
       <h2>View all parcels</h2>
-      <Link to="/overview">View all parcels</Link>
+      <p>Get an overview of all tracked parcels.</p>
+      <Link to="/overview" className="link">
+        View all parcels
+      </Link>
     </div>
   );
 }

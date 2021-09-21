@@ -1,33 +1,38 @@
+import DateTime from "./DateTime";
 import StatusIcon from "./StatusIcon";
 import StatusWording from "./StatusWording";
 
 export default function ParcelDetail({ information }) {
   return (
-    <div className="OrderDetailed">
+    <div className="ParcelDetail">
       <StatusIcon orderStatus={information.status} />
       <p className="data-label">Sender</p>
       <p className="data-actual">{information.sender}</p>
       <p className="data-label">Status</p>
       <StatusWording orderStatus={information.status} />
-      {/* TODO convert to long date */}
-      <p className="data-label">Estimated delivery date</p>
-      <p className="data-actual">{information.eta}</p>
+      <p className="data-label">Estimated time of arrival</p>
+      <DateTime dateString={information.eta} />
       <p className="data-label">Parcel ID</p>
       <p className="data-actual">{information.parcel_id}</p>
       <p className="data-label">Pickup location</p>
       <p className="data-actual">{information.location_name}</p>
-      <p className="data-label">Phone number</p>
+      <p className="data-label">User phone number</p>
       <p className="data-actual">{information.user_phone}</p>
       <p className="data-label">Verification required?</p>
-      <p className="data-actual">{information.verification_required}</p>
-      <p className="data-label">Notes</p>
-      {information.notes != null && (
-        <p className="data-actual">{information.notes}</p>
+      {information.verification_required ? (
+        <p className="data-actual">Yes </p>
+      ) : (
+        <p className="data-actual">No</p>
       )}
-      {information.notes === null && <p className="data-actual">None</p>}
+      <p className="data-label">Notes</p>
+      {information.notes != null ? (
+        <p className="data-actual">{information.notes}</p>
+      ) : (
+        <p className="data-actual">None</p>
+      )}
       {/* TODO convert to long date and time */}
       <p className="data-label">Last updated</p>
-      <p className="data-actual">{information.last_updated}</p>
+      <DateTime dateString={information.last_updated} />
     </div>
   );
 }

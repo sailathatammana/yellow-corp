@@ -1,10 +1,24 @@
-.OrderDetailed .StatusIcon {
-  font-size: $font-size-x-big;
+.ParcelDetail {
+  .StatusIcon {
+    font-size: $font-size-x-big;
+    color: $color-brown;
+    margin-bottom: $space-big;
+    text-align: center;
+  }
+  .status {
+    font-size: $font-size-medium;
+    font-weight: 700;
+    margin-top: $space-small;
+    margin-bottom: $space-big;
+    text-align: center;
+  }
 }
 
 .data-label {
-  font-size: $font-size-small;
+  font-size: $font-size-medium;
   margin-bottom: 0px;
+  color: $color-brown;
+  text-align: center;
 }
 
 .data-actual {
@@ -12,4 +26,5 @@
   font-weight: 700;
   margin-top: $space-small;
   margin-bottom: $space-big;
+  text-align: center;
 }

@@ -15,12 +15,15 @@ export default function Detail({ match }) {
   return (
     <div id="results" className="container">
       <h1>Parcel details</h1>
-      <div className="OrderDetailed">
+      <div className="ParcelDetail">
         <ParcelDetail key={parcel.id} information={parcel} />
       </div>
-      <Link className="back-to-overview" to="/">
-        ⬅ Back to all parcels
-      </Link>
+      <hr />
+      <div className="center">
+        <Link className="back-link" to="/overview">
+          ⬅ Back to all parcels
+        </Link>
+      </div>
     </div>
   );
 }

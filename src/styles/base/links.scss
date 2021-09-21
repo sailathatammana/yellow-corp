@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+a {
+  color: $color-brown;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.link {
+  color: $color-brown;
+  text-decoration: none;
+}
+
+.link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.back-link {
+  color: $color-brown;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}

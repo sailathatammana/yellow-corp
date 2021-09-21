@@ -1,6 +1,7 @@
 // NPM Packages
 import { useState, useEffect } from "react";
 import { useRecoilState } from "recoil";
+import { Link } from "react-router-dom";
 
 // Project files
 import backup from "../data/orders.json";
@@ -41,13 +42,19 @@ export default function Overview() {
         <h1>All parcels</h1>
         <p>
           Click on a parcel for full details, or use the search bar above to
-          filter results.
+          filter results by sender.
         </p>
       </div>
       <div className="grid">
         {status === 0 && <p>Loading parcels...</p>}
         {status === 1 && ParcelsArray}
         {status === 2 && ParcelsArray}
+      </div>
+      <hr />
+      <div className="center">
+        <Link className="back-link" to="/">
+          ⬅ Back to home
+        </Link>
       </div>
     </div>
   );
