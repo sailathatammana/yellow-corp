@@ -5,3 +5,13 @@
 /* variables imports */
 @import "./base/layout.scss";
 @import "./base/typography.scss";
+
+/* modules */
+@import "./modules/navigation.scss";
+@import "./modules/parcel-detailed.scss";
+@import "./modules/parcel-overview.scss";
+
+/* modules */
+@import "./pages/details.scss";
+@import "./pages/home.scss";
+@import "./pages/overview.scss";

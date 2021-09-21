@@ -1,0 +1,21 @@
+.OrderConcise .StatusIcon {
+  font-size: $font-size-big;
+  color: $color-brown;
+}
+
+.sender {
+  font-size: $font-size-medium;
+  font-weight: 700;
+}
+
+.status {
+  font-size: $font-size-small;
+}
+.OrderConcise {
+  display: grid;
+  grid-template-columns: $space-x-big 1fr;
+  column-gap: $space-big;
+  justify-items: start;
+  align-items: center;
+  margin-bottom: $space-medium;
+}

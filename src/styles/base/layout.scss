@@ -2,10 +2,26 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .App {
   background-color: $color-light-grey;
   color: $color-black;
   font-family: "Karla", sans-serif;
+  padding: $space-medium;
+}
+
+.container {
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: var(--space-medium);
+  @media (min-width: $media-phablet) {
+    padding: $space-big;
+  }
+  @media (min-width: $media-tablet) {
+    max-width: 600px;
+    padding: $space-big 0;
+  }
 }

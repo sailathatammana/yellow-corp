@@ -1,0 +1,15 @@
+.OrderDetailed .StatusIcon {
+  font-size: $font-size-x-big;
+}
+
+.data-label {
+  font-size: $font-size-small;
+  margin-bottom: 0px;
+}
+
+.data-actual {
+  font-size: $font-size-medium;
+  font-weight: 700;
+  margin-top: $space-small;
+  margin-bottom: $space-big;
+}

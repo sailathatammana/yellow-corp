@@ -1,0 +1,13 @@
+nav {
+  background-color: $color-yellow;
+  padding: $space-medium;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin: $space-big auto;
+  @media (min-width: $media-tablet) {
+    max-width: 250px;
+  }
+}
