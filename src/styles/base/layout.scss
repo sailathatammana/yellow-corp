@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+body {
+  margin: 0;
+}
+
+.App {
+  background-color: $color-light-grey;
+  color: $color-black;
+  font-family: "Karla", sans-serif;
+}
