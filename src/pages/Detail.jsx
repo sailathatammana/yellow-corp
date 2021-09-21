@@ -14,7 +14,7 @@ export default function Detail({ match }) {
 
   return (
     <div id="results" className="container">
-      <h1>Parcel details</h1>
+      <h1 className="intro">Parcel details</h1>
       <div className="ParcelDetail">
         <ParcelDetail key={parcel.id} information={parcel} />
       </div>
