@@ -11,12 +11,14 @@ export default function Home() {
         src={logo}
         alt="Illustration of a delivery van"
       />
-      <h1>Track your parcels with ease</h1>
-      <h2>View all parcels</h2>
-      <p>Get an overview of all tracked parcels.</p>
-      <Link to="/overview" className="link">
-        View all parcels
-      </Link>
+      <div className="home-intro">
+        <h1>Track your parcels with ease</h1>
+        <h2>View all parcels</h2>
+        <p>Get an overview of all tracked parcels.</p>
+        <Link to="/overview" className="link">
+          View all parcels
+        </Link>
+      </div>
     </div>
   );
 }
