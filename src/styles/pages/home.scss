@@ -1,20 +1,14 @@
 #home {
   .image-van {
     width: 100%;
-    height: auto;
-    margin-bottom: $space-medium;
+    height: 302px;
+    margin-bottom: $space-xx-big;
+    @media (min-width: $media-phablet) {
+      height: auto;
+      margin-bottom: $space-medium;
+    }
   }
   h1 {
     text-align: center;
   }
-  /*  .home-intro {
-    margin: auto $space-medium;
-    text-align: center;
-  }
-  h2 {
-    margin-bottom: $space-big;
-  }
-  p {
-    margin-bottom: $space-medium;
-  } */
 }

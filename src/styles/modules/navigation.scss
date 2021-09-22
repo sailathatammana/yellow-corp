@@ -20,8 +20,15 @@
     li {
       display: inline-block;
       color: $color-black;
-      font-size: $font-size-medium;
-      font-weight: 700;
+      font-size: $font-size-medium-big;
+      font-weight: 600;
+      @media (min-width: $media-tablet) {
+        font-weight: 700;
+      }
+    }
+    @media (min-width: $media-tablet) {
+      margin: 0 auto;
+      max-width: 700px;
     }
   }
   a {

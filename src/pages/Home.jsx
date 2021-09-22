@@ -1,4 +1,4 @@
-import logo from "../assests/yellowCorp1.jpg";
+import logo from "../assests/yellowCorp.jpg";
 
 export default function Home() {
   return (
