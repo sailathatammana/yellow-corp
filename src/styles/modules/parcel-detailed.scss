@@ -31,9 +31,6 @@
   margin-bottom: 0px;
   color: $color-brown;
   text-align: center;
-  @media (min-width: $media-tablet) {
-    text-align: start;
-  }
 }
 
 .data-actual {
@@ -42,7 +39,10 @@
   margin-top: $space-small;
   margin-bottom: $space-big;
   text-align: center;
-  @media (min-width: $media-tablet) {
-    text-align: start;
-  }
+}
+.details-map {
+  grid-area: map;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
 }

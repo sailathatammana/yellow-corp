@@ -1,7 +1,4 @@
-// NPM package
-import { Link } from "react-router-dom";
-
-import logo from "../assests/yellowCorp.jpg";
+import logo from "../assests/yellowCorp1.jpg";
 
 export default function Home() {
   return (

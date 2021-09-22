@@ -1,8 +1,13 @@
 import DateTime from "./DateTime";
+import Map from "./Map";
 import StatusIcon from "./StatusIcon";
 import StatusWording from "./StatusWording";
 
 export default function ParcelDetail({ information }) {
+  const coordinates = {
+    lat: information.location_coordinate_latitude,
+    lng: information.location_coordinate_longitude,
+  };
   return (
     <div className="ParcelDetail">
       <StatusIcon orderStatus={information.status} />
@@ -38,6 +43,9 @@ export default function ParcelDetail({ information }) {
           <p className="data-label">Last updated</p>
           <DateTime dateString={information.last_updated} />
         </article>
+      </div>
+      <div className="details-map">
+        <Map coordinates={coordinates} />
       </div>
     </div>
   );
