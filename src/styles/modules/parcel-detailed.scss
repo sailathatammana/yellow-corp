@@ -11,6 +11,18 @@
     margin-top: $space-small;
     margin-bottom: $space-big;
     text-align: center;
+    @media (min-width: $media-tablet) {
+      text-align: start;
+    }
+  }
+  .details {
+    @media (min-width: $media-tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: $space-big;
+      justify-items: center;
+      margin-bottom: $space-medium;
+    }
   }
 }
 
@@ -19,6 +31,9 @@
   margin-bottom: 0px;
   color: $color-brown;
   text-align: center;
+  @media (min-width: $media-tablet) {
+    text-align: start;
+  }
 }
 
 .data-actual {
@@ -27,4 +42,7 @@
   margin-top: $space-small;
   margin-bottom: $space-big;
   text-align: center;
+  @media (min-width: $media-tablet) {
+    text-align: start;
+  }
 }

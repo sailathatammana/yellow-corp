@@ -1,9 +1,6 @@
-// NPM Packages
 import { useState, useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { Link } from "react-router-dom";
-
-// Project files
 import backup from "../data/orders.json";
 import ParcelOverview from "../components/ParcelOverview";
 import { parcelState } from "../state/parcelData";
@@ -28,10 +25,7 @@ export default function Overview() {
     setStatus(1);
   }
   function onFetchFail(error) {
-    console.log(
-      "Failed to fetch data from API, using backup data for demo purposes instead. Error:",
-      error
-    );
+    console.log("Error:", error);
     setParcels(backup);
     setStatus(2);
   }
