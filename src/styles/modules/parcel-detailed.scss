@@ -26,19 +26,25 @@
   }
 }
 
-.data-label {
+.label {
   font-size: $font-size-medium;
   margin-bottom: 0px;
   color: $color-brown;
   text-align: center;
+  @media (min-width: $media-tablet) {
+    text-align: start;
+  }
 }
 
-.data-actual {
+.actual {
   font-size: $font-size-medium;
   font-weight: 700;
   margin-top: $space-small;
   margin-bottom: $space-big;
   text-align: center;
+  @media (min-width: $media-tablet) {
+    text-align: start;
+  }
 }
 .details-map {
   grid-area: map;

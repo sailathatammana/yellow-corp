@@ -4,7 +4,7 @@ export default function DateTime({ dateString }) {
   const readableTime = dateString.split("T")[1].substring(0, 5);
 
   return (
-    <p className="data-actual">
+    <p className="actual">
       {readableDate} at {readableTime}
     </p>
   );
