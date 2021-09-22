@@ -2,9 +2,12 @@
   .image-van {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    margin-bottom: $space-medium;
   }
-  .home-intro {
+  h1 {
+    text-align: center;
+  }
+  /*  .home-intro {
     margin: auto $space-medium;
     text-align: center;
   }
@@ -13,5 +16,5 @@
   }
   p {
     margin-bottom: $space-medium;
-  }
+  } */
 }

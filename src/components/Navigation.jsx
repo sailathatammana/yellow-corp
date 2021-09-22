@@ -6,10 +6,18 @@ import logo from "../assests/logo.png";
 
 export default function Navigation() {
   return (
-    <nav className="Header">
-      <Link to="/">
-        <img className="logo" src={logo} alt="YellowCorp logo" />
-      </Link>
-    </nav>
+    <div className="header">
+      <img className="logo" src={logo} alt="YellowCorp logo" />
+      <ul>
+        <li>
+          <Link to="/" exact>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/overview">Parcels</Link>
+        </li>
+      </ul>
+    </div>
   );
 }

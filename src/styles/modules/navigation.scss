@@ -1,16 +1,34 @@
-nav {
-  box-sizing: border-box;
-  height: 60px;
-  padding: $space-small;
-  background-color: $color-yellow;
+.header {
   text-align: center;
-}
-
-.logo {
-  max-width: 200px;
-  height: auto;
-  margin: 0 auto;
-  @media (min-width: $media-tablet) {
-    max-width: 250px;
+  margin: 0;
+  background-color: $color-yellow;
+  width: 100%;
+  color: $color-black;
+  .logo {
+    max-width: 200px;
+    height: auto;
+    margin: 5px auto;
+    @media (min-width: $media-tablet) {
+      max-width: 250px;
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    li {
+      display: inline-block;
+      color: $color-black;
+      font-size: $font-size-medium;
+      font-weight: 700;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $color-black;
+  }
+  a:hover {
+    color: $color-brown;
   }
 }

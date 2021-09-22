@@ -14,14 +14,13 @@ body {
 
 .container {
   align-items: center;
-  min-height: 100vh;
   margin: 0 auto;
   padding: var(--space-medium);
   @media (min-width: $media-phablet) {
     padding: $space-big;
   }
   @media (min-width: $media-tablet) {
-    max-width: 960px;
+    max-width: 600px;
     padding: $space-big 0;
   }
 }
