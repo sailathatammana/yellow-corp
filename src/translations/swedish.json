@@ -1,4 +1,8 @@
 {
+  "navigationView": {
+    "home": "Hemma",
+    "parcel": "Paket"
+  },
   "homeView": {
     "title": "Håll enkelt reda på dina paket"
   },

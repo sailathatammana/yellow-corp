@@ -1,4 +1,8 @@
 {
+  "navigationView": {
+    "home": "Home",
+    "parcel": "Parcels"
+  },
   "homeView": {
     "title": "Track your parcels with ease"
   },

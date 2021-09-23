@@ -12,8 +12,8 @@ i18n.use(initReactI18next).init({
     en: { translation: english },
     se: { translation: swedish },
   },
-  lng: "se",
-  fallbackLng: "se",
+  lng: "en",
+  fallbackLng: "en",
   interpolation: { escapeValue: false }, // react already saves from xss
 });
 
