@@ -1,0 +1,31 @@
+{
+  "homeView": {
+    "title": "Track your parcels with ease"
+  },
+  "listView": {
+    "title": "All parcels",
+    "description": "Click on a parcel for full details, or use the search bar above to filter results by sender.",
+    "loading": "Loading parcels...",
+    "back": "Back to home"
+  },
+  "parcelView": {
+    "title": "Parcel details",
+    "back": "Back to all parcels",
+    "sender": "Sender",
+    "status": "Status",
+    "infoReceived": "Order info received",
+    "onTheWay": "On the way",
+    "delivered": "Delivered",
+    "ready": "Ready for Pickup",
+    "eta": "Estimated time of arrival",
+    "id": "Parcel ID",
+    "location": "Pickup location",
+    "phone": "User phone number",
+    "verification": "Verification required?",
+    "yes": "Yes",
+    "no": "No",
+    "notes": "Notes",
+    "none": "None",
+    "updated": "Last updated"
+  }
+}
