@@ -18,8 +18,8 @@ export default function App() {
           <Navigation />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/overview" exact component={Overview} />
-            <Route path="/parcel/:id" exact component={Detail} />
+            <Route path="/overview" component={Overview} />
+            <Route path="/parcel/:id" component={Detail} />
           </Switch>
           <Footer />
         </BrowserRouter>

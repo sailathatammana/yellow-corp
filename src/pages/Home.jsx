@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../assests/yellowCorp.jpg";
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div id="home" className="container">

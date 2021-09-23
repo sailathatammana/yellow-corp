@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 export default function StatusWording({ orderStatus }) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div>

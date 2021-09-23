@@ -10,7 +10,10 @@
     "title": "Alla paket",
     "description": "Klicka på ett paket för fullständig information, eller använd sökfältet ovan för att filtrera resultat efter avsändare.",
     "loading": "Laddning pågår...",
-    "back": "Tillbaka till startsidan"
+    "back": "Tillbaka till startsidan",
+    "arrivedOn": "Ankom",
+    "arrivingOn": "Ankommer",
+    "pickup": "Hämta från"
   },
   "parcelView": {
     "title": "Paketdetaljer",
@@ -19,17 +22,17 @@
     "status": "Status",
     "infoReceived": "Din beställning har mottagits",
     "onTheWay": "På väg",
-    "delivered": "Levereras",
+    "delivered": "Levererad",
     "ready": "Redo för upphämtning",
     "eta": "Beräknad ankomsttid",
     "id": "Paket-ID",
     "location": "Hämtningsplats",
     "phone": "Användarens telefonnummer",
-    "verification": "krävs verifiering?",
+    "verification": "Krävs verifiering?",
     "yes": "Ja",
     "no": "Nej",
-    "notes": "Notes",
-    "none": "Anteckningar",
+    "notes": "Anteckningar",
+    "none": "Finns inga",
     "updated": "Senast uppdaterad"
   }
 }

@@ -7,7 +7,7 @@ import logo from "../assests/logo.png";
 import Language from "./Language";
 
 export default function Navigation() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="header">

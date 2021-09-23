@@ -10,7 +10,10 @@
     "title": "All parcels",
     "description": "Click on a parcel for full details, or use the search bar above to filter results by sender.",
     "loading": "Loading parcels...",
-    "back": "Back to home"
+    "back": "Back to home",
+    "arrivedOn": "Arrived on",
+    "arrivingOn": "Arriving on",
+    "pickup": "Pick up from"
   },
   "parcelView": {
     "title": "Parcel details",

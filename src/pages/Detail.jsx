@@ -10,7 +10,7 @@ import { parcelState } from "../state/parcelData";
 export default function Detail({ match }) {
   // Global state
   const parcels = useRecoilValue(parcelState);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const routerID = match.params.id;
   const parcel = parcels.find((item) => item.parcel_id === routerID);
 

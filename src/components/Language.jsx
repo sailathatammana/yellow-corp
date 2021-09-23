@@ -21,7 +21,7 @@ export default function Language() {
 
   return (
     <div className="language-selector" onClick={onClick}>
-      <span className="language-name" onClick={onClick}>
+      <span className="language-name">
         {language === "en" && "Svenska"}
         {language === "se" && "English"}
       </span>
