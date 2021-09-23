@@ -25,18 +25,12 @@ export default function ParcelDetail({ information }) {
           <DateTime dateString={information.eta} />
           <p className="label">{t("parcelView.id")}</p>
           <p className="actual">{information.parcel_id}</p>
-          <p className="label">{t("parcelView.location")}</p>
-          <p className="actual">{information.location_name}</p>
         </article>
         <article className="result-right">
+          <p className="label">{t("parcelView.location")}</p>
+          <p className="actual">{information.location_name}</p>
           <p className="label">{t("parcelView.phone")}</p>
           <p className="actual">{information.user_phone}</p>
-          <p className="label">{t("parcelView.verification")}</p>
-          {information.verification_required ? (
-            <p className="actual">{t("parcelView.yes")} </p>
-          ) : (
-            <p className="actual">{t("parcelView.no")}</p>
-          )}
           <p className="label">{t("parcelView.notes")}</p>
           {information.notes != null ? (
             <p className="actual">{information.notes}</p>
