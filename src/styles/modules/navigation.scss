@@ -1,9 +1,10 @@
 .header {
   text-align: center;
-  margin: 0;
   background-color: $color-yellow;
-  width: 100%;
   color: $color-black;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: var(--space-big);
   .logo {
     max-width: 200px;
     height: auto;

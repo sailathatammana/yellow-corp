@@ -1,0 +1,38 @@
+{
+  "navigationView": {
+    "home": "Hemma",
+    "parcel": "Paket"
+  },
+  "homeView": {
+    "title": "Håll enkelt reda på dina paket"
+  },
+  "listView": {
+    "title": "Alla paket",
+    "description": "Klicka på ett paket för fullständig information, eller använd sökfältet ovan för att filtrera resultat efter avsändare.",
+    "loading": "Laddning pågår...",
+    "back": "Tillbaka till startsidan",
+    "arrivedOn": "Ankom",
+    "arrivingOn": "Ankommer",
+    "pickup": "Hämta från"
+  },
+  "parcelView": {
+    "title": "Paketdetaljer",
+    "back": "Tillbaka till alla paket",
+    "sender": "Avsändare",
+    "status": "Status",
+    "infoReceived": "Din beställning har mottagits",
+    "onTheWay": "På väg",
+    "delivered": "Levererad",
+    "ready": "Redo för upphämtning",
+    "eta": "Beräknad ankomsttid",
+    "id": "Paket-ID",
+    "location": "Hämtningsplats",
+    "phone": "Användarens telefonnummer",
+    "verification": "Krävs verifiering?",
+    "yes": "Ja",
+    "no": "Nej",
+    "notes": "Anteckningar",
+    "none": "Finns inga",
+    "updated": "Senast uppdaterad"
+  }
+}
