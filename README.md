@@ -1,70 +1,65 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 1. YellowCorp
 
-In the project directory, you can run:
+The website immediately fetches data from a mock API concerning and display the user's parcels. Clicking on any of the parcels will take you to a detailed view of the parcel.
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2. Setup
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+These are the instructions to run the project:
 
-### `yarn test`
+1. Open the terminal and navigate to the folder where this readme file is located.
+2. Install the project dependencies by typing `npm install` on the terminal.
+3. Start the project by typing `npm start` on the terminal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## 3. Project organization
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3.1 Requirement gathering
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The document submited by the fictional company as the coding test. It is highlighted using color to differenciate the functional, non-functional requrirements among other key elements.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Google Docs link](https://docs.google.com/document/d/1HhlLm1li2hBwSnv8djvF5OPgCJv-d2767LanzpDMMRY/edit#heading=h.di8qssq1ip5l)
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 3.2 Project spreadsheet
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A spreadsheet with the information related to the organization of the project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Google Spreadsheets link](https://docs.google.com/spreadsheets/d/10xDPlB_JLlzGrjjAefgLHUmqu2d8v40mfToAiN3AaeY/edit#gid=1795943980)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### 3.3 User Flow
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A low detail diagram to visualize how the app will work.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[User Flow](https://whimsical.com/userflow-yellowcorp-Dc1dSMTz1kbwoMTn4EMTiZ@2Ux7TurymN4RywYwB59j)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3.4 Design mockup
 
-### Analyzing the Bundle Size
+A low detail mockup to visualize how the app will look.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Figma link](https://www.figma.com/file/E05XygrsZd9Myajg9txVET/Package-Tracker?node-id=1%3A3)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 3.5 Component tree
 
-### Advanced Configuration
+The component tree allows to visualize the overall hierarchy of the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[Component Tree](https://whimsical.com/component-tree-yellowcorp-N8srtsAbehGzS9ptsC8bnG)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 4. Demo
 
-### `yarn build` fails to minify
+[Demo](https://yellow-corp.web.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
