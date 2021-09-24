@@ -4,8 +4,7 @@ import GoogleMapReact from "google-map-react";
 import MapMarker from "./MapMarker";
 
 export default function Map({ coordinates, label }) {
-  const ck = require("ckey");
-  const api_key = ck.REACT_APP_MAPS_API_KEY;
+  const api_key = process.env.REACT_APP_ACCESS_TOKEN;
 
   return (
     <div className="map">

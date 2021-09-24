@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRecoilState } from "recoil";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
 import backup from "../data/orders.json";
 import ParcelOverview from "../components/ParcelOverview";
 import { parcelState } from "../state/parcelData";
@@ -42,12 +42,6 @@ export default function Overview() {
         {status === 0 && <p>{t("listView.loading")}</p>}
         {status === 1 && ParcelsArray}
         {status === 2 && ParcelsArray}
-      </div>
-      <hr />
-      <div className="center">
-        <Link className="back-link" to="/">
-          ⬅ {t("listView.back")}
-        </Link>
       </div>
     </div>
   );
