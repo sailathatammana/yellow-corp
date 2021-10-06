@@ -8,11 +8,19 @@ import StatusWording from "./StatusWording";
 
 export default function ParcelDetail({ information }) {
   const { t } = useTranslation();
-  const coordinates = {
-    lat: information.location_coordinate_latitude,
-    lng: information.location_coordinate_longitude,
-  };
+  // this can be an array as ALWAYS the latitude comes first
+  const coordinates = [
+    information.location_coordinate_latitude,
+    information.location_coordinate_longitude,
+  ];
 
+  // Properties
+  const noteMessage =
+    information.notes != null ? information.notes : t("parcelView.none");
+
+  // Readability -1
+  // Yo could have play around with either <h3>, <h4> or <label> for the titles, and then just <p> for the text
+  // withouth adding extra classes
   return (
     <div className="ParcelDetail">
       <StatusIcon orderStatus={information.status} />
@@ -33,11 +41,9 @@ export default function ParcelDetail({ information }) {
           <p className="label">{t("parcelView.phone")}</p>
           <p className="actual">{information.user_phone}</p>
           <p className="label">{t("parcelView.notes")}</p>
-          {information.notes != null ? (
-            <p className="actual">{information.notes}</p>
-          ) : (
-            <p className="actual">{t("parcelView.none")}</p>
-          )}
+
+          {/* Here you can use a constant to better organize the code */}
+          <p className="actual">{noteMessage}</p>
           <p className="label">{t("parcelView.updated")}</p>
           <DateTime dateString={information.last_updated} />
         </article>

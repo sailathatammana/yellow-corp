@@ -10,6 +10,8 @@ import StatusWording from "./StatusWording";
 export default function ParcelOverview({ information }) {
   const { t } = useTranslation();
 
+  // good use of a propertie to make the JSX easy to read.
+  // please apply the same on ParcelDetail
   const whetherArrived =
     information.status === "delivered" ||
     information.status === "ready-for-pickup"

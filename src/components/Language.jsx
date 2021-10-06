@@ -9,6 +9,8 @@ export default function Language() {
   const seObject = require("../assests/se.png");
   const seURL = seObject.default;
 
+  // why the "if" is followed by a "else if" instead "else", what happens if some extra case happens?
+  // this can be handled with a swtich statement and also handle the default case (send it to "en" in case you find a "fr" there is no french json file)
   function onClick() {
     if (language === "en") {
       i18n.changeLanguage("se");

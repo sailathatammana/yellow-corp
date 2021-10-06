@@ -9,8 +9,10 @@ import { parcelState } from "../state/parcelData";
 export default function Overview() {
   const [parcels, setParcels] = useRecoilState(parcelState);
   const [status, setStatus] = useState(0);
+
   const { t } = useTranslation();
   const API_URL = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
+
   const ParcelsArray = parcels.map((item) => (
     <ParcelOverview key={item.id} information={item} />
   ));
@@ -40,6 +42,7 @@ export default function Overview() {
       </div>
       <div className="grid">
         {status === 0 && <p>{t("listView.loading")}</p>}
+        {/* Why status 1 and 2 take you to the same page -1 */}
         {status === 1 && ParcelsArray}
         {status === 2 && ParcelsArray}
       </div>
